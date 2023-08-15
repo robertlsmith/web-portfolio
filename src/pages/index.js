@@ -1,7 +1,5 @@
 import * as React from "react"
 
-const cursor = document.querySelector(".cursor");
-
 const IndexPage = () => {
   return (
     <main class="bg-persian-indigo">
