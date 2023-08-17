@@ -7,14 +7,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        raleway: ["'Raleway', sans-serif"],
+        montserrat: ["'Montserrat', sans-serif"],
+        vollkorn: ["'Vollkorn', serif"],
       },
       colors: {
-        'persian-indigo': '#27187e',
-        'antiflash-white': '#f1f2f6',
-        'cornflower-blue': '#758BFD',
-        'periwinkle': '#AEB8FE',
-        'ut-orange': '#FF8600',
+        'indigo-dye': '#134864',
       },
     },
   },
