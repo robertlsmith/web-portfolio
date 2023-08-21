@@ -21,9 +21,33 @@ body {
         color: theme(colors.ice-blue);
     }
     .nav {
-        font-size: 32px;
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-left: 80px;
+    }
+    .nav ul li {
+        list-style-type: none;
+        display: inline;
+        overflow: hidden;
+    }
+    .nav li a {
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 24px;
         font-family: theme(fontFamily.montserrat);
         font-weight: theme(fontWeight.medium);
+        text-decoration: none;
+    }
+    /* .nav li a:hover {
+        font-weight: bold;
+    } */
+    .nav .logo {
+        font-size: 32px;
+        font-family: theme(fontFamily.vollkorn);
+        font-weight: theme(fontWeight.bold);
+    }
+    .nav-right {
+        float: right;
     }
     /* ... */
 }
