@@ -2,9 +2,9 @@ import * as React from "react"
 
 const IndexPage = () => {
   return (
-    <main class="bg-indigo-dye">
-      <div>
-        <p class="text-6xl text-white font-montserrat font-bold">Robert Smith</p>
+    <main>
+      <div class="home-box">
+        <p class="text-6xl font-montserrat font-bold">Robert Smith</p>
       </div>
     </main>
   )
