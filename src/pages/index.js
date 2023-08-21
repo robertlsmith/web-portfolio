@@ -1,10 +1,11 @@
 import * as React from "react"
+import NavBar from "../components/navbar"
 
 const IndexPage = () => {
   return (
     <main>
       <div class="home-box">
-        <p class="text-6xl font-montserrat font-bold">Robert Smith</p>
+        <NavBar></NavBar>
       </div>
     </main>
   )

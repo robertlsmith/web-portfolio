@@ -20,5 +20,10 @@ body {
         background-color: theme(colors.deep-blue);
         color: theme(colors.ice-blue);
     }
+    .nav {
+        font-size: 32px;
+        font-family: theme(fontFamily.montserrat);
+        font-weight: theme(fontWeight.medium);
+    }
     /* ... */
 }
