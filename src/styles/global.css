@@ -72,7 +72,7 @@ body {
         height: 30px;
         overflow: hidden;
         transition: all .5s;
-        margin-bottom: -5px;
+        margin-bottom: -4px;
     }
     .switch-name .back {
         background-color: var(--dark-sky);
@@ -115,6 +115,25 @@ body {
         fill: var(--sun);
         transition: .5s;
         opacity: 0;
+    }
+    .hero-container {
+        display: flex;
+        padding: 15rem 20rem;
+    }
+    .greeting-text {
+        font-family: theme(fontFamily.montserrat);
+        font-weight: theme(fontWeight.normal);
+        font-size: 2em;
+    }
+    .name-text {
+        font-family: theme(fontFamily.vollkorn);
+        font-weight: theme(fontWeight.bold);
+        font-size: 4em;
+    }
+    .title-text {
+        font-family: theme(fontFamily.montserrat);
+        font-weight: theme(fontWeight.normal);
+        font-size: 2.5em;
     }
     /* ... */
 }

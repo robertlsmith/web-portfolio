@@ -1,4 +1,6 @@
 import * as React from "react"
+// import { useState, useEffect } from "react"
+
 import ToggleSlider from "./toggleSlider"
 
 function NavBar() {
@@ -9,8 +11,7 @@ function NavBar() {
                     <li><a class="logo" href="/">RS.</a></li>
                     <div class="nav-right">
                         <li class="switch-name">
-                            <ToggleSlider></ToggleSlider>
-                            {/* <input type="range" min="0" max="1" value="0" class="slider"/> */}
+                            <ToggleSlider onclick="darkMode()"></ToggleSlider>
                         </li>
                         <li><a href="/#about">About</a></li>
                         <li><a href="/#projects">Projects</a></li>
@@ -19,7 +20,6 @@ function NavBar() {
                 </ul>
             </div>
         </div>
-        
     )
 }
 

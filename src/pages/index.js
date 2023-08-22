@@ -1,15 +1,14 @@
 import * as React from "react"
 import NavBar from "../components/navbar"
+import HeroPage from "../components/hero"
+// import { useState, useEffect } from "react"
 
 const IndexPage = () => {
   return (
     <main>
       <div class="home-box">
         <NavBar></NavBar>
-      </div>
-      <div class="about-box">
-      </div>
-      <div class="projects-box">
+        <HeroPage></HeroPage>
       </div>
     </main>
   )
