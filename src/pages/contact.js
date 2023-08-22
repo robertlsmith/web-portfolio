@@ -4,8 +4,9 @@ import NavBar from "../components/navbar"
 const ContactPage = () => {
     return (
       <main>
-        <NavBar></NavBar>
-        <h1>Hallo Kontakt</h1>
+        <div class="home-box">
+          <NavBar></NavBar>
+        </div>
       </main>
     )
   }

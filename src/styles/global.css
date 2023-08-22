@@ -20,20 +20,25 @@ body {
         background-color: theme(colors.deep-blue);
         color: theme(colors.ice-blue);
     }
-    .nav {
+    .nav-container ul {
+        padding-top: 22px;
         margin: 0 auto;
-        padding-top: 30px;
-        padding-left: 80px;
+        margin-bottom: 16px;
     }
-    .nav ul li {
-        list-style-type: none;
+    .nav {
+        top: 3%;
+        width: 100%;
+        position: fixed;
+    }
+    .nav-container ul li {
+        list-style: none;
         display: inline;
         overflow: hidden;
+        margin: 0 15px;
     }
-    .nav li a {
+    .nav-container li a {
         display: inline-block;
-        padding: 5px 10px;
-        font-size: 24px;
+        font-size: 25px;
         font-family: theme(fontFamily.montserrat);
         font-weight: theme(fontWeight.medium);
         text-decoration: none;
@@ -42,12 +47,74 @@ body {
         font-weight: bold;
     } */
     .nav .logo {
-        font-size: 32px;
+        position: relative;
+        margin-left: 10%;
+        font-size: 36px;
         font-family: theme(fontFamily.vollkorn);
         font-weight: theme(fontWeight.bold);
     }
     .nav-right {
         float: right;
+        margin-right: 10%;
+        padding-top: 5px;
+        position: relative;
+    }
+    .switch-name {
+        --dark-sky: theme(colors.ocean-blue);
+        --moon: theme(colors.ice-blue);
+        --light-sky: theme(colors.ice-blue);
+        --sun: theme(colors.deep-blue);
+        display: inline-block;
+        position: relative;
+        border-radius: 5em;
+        cursor: pointer;
+        width: 60px;
+        height: 30px;
+        overflow: hidden;
+        transition: all .5s;
+        margin-bottom: -5px;
+    }
+    .switch-name .back {
+        background-color: var(--dark-sky);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        transition: .5s ease-in-out;
+    }
+    .switch-name .checkbox {
+        opacity: 0;
+    }
+    .switch-name .checkbox:checked ~ .back {
+        background-color: var(--light-sky);
+    }
+    .switch-name .checkbox:checked ~ .moon {
+        transform: translate(100%) rotate(180deg);
+        opacity: 0;
+    }
+    .switch-name .checkbox:checked ~ .sun {
+        transform: translate(100%) rotate(180deg);
+        opacity: 1;
+    }
+    .switch-name .moon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        padding: .4em;
+        fill: var(--moon);
+        transition: .5s;
+    }
+    .switch-name .sun {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        padding: .4em;
+        fill: var(--sun);
+        transition: .5s;
+        opacity: 0;
     }
     /* ... */
 }

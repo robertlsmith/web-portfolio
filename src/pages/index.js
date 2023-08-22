@@ -7,6 +7,10 @@ const IndexPage = () => {
       <div class="home-box">
         <NavBar></NavBar>
       </div>
+      <div class="about-box">
+      </div>
+      <div class="projects-box">
+      </div>
     </main>
   )
 }
