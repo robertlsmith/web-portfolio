@@ -8,9 +8,9 @@ function NavBar() {
                     <li><a class="logo" href="/">RS.</a></li>
                     <div class="nav-right">
                         {/* Space here for adding the light/dark mode button */}
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="contact">Contact</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#projects">Projects</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </div>         
                 </ul>
             </div>
